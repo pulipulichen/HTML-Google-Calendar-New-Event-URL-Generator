@@ -1,4 +1,4 @@
-if ('serviceWorker' in navigator && false) {  // 不使用service-worker快取，這樣會無法安裝
+if ('serviceWorker' in navigator) {  // 不使用service-worker快取，這樣會無法安裝
 //if ('serviceWorker' in navigator) {  
   navigator.serviceWorker.register('./service-worker.js')
     .then(function (registration) {
