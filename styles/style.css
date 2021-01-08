@@ -1,0 +1,32 @@
+#google_calendar_20161211 {
+  font-size: 1.5em;
+}
+#google_calendar_20161211 button {
+  font-size: 1em;
+}
+#google_calendar_20161211 input {
+  font-size: 1em;
+}
+#google_calendar_20161211 label {
+    display: block;
+  margin-bottom: 0.5em;
+}
+
+#google_calendar_20161211 hr,
+#google_calendar_20161211 textarea {
+  display:block;
+}
+
+#google_calendar_20161211 textarea {
+  width: 90%;
+  height: 5em;
+  
+}
+
+#google_calendar_20161211 .result button {
+   display: block;
+}
+
+#google_calendar_20161211 .result a {
+  word-wrap: break-word;
+}

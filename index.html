@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Calendar New Event URL Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    
+<!-- =================================== -->
+
+<!-- https://www.favicon-generator.org/ -->
+<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+  </head>
+  <body>
+    
+<script src="vendors/jquery/jquery.min.js"></script>
+<script src="vendors/clipboard/clipboard.min.js"></script>
+<script src="vendors/notifyjs/notify.js"></script>
+<script src="vendors/dayjs/dayjs.min.js"></script>
+
+
+<div id="google_calendar_20161211">
+  <label>TITLE: <input type="text" name="title"  value="" onfocus="this.select();" /></label>
+  <label>START DATE: <input type="datetime-local" name="date_start" /> <button type="button" class="set-current">Set Current Time</button>  </label>
+  <label>END DATE: <input type="datetime-local" name="date_end" /> <button type="button" class="set-current">Set Current Time</button>    </label>
+  <label>LOCATION: <input type="text" name="location" value="" onfocus="this.select();" /> </label>
+  <label>DETAILS: <textarea name="details" onfocus="this.select();"></textarea>  </label>
+  <label>INVITATION
+ EMAIL ADDRESSES: (split email addresses in separate lines)<textarea name="add" onfocus="this.select();" placeholder="foo@bar.baz
+blog@pulipuli.info"></textarea>  </label>
+  <hr />
+  <div class="result"></div>
+</div>
+
+<script src="scripts/main.js"></script>
+
+  </body>
+</html>
