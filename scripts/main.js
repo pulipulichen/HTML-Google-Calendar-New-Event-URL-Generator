@@ -13,16 +13,20 @@ var _google_calendar_20161211 = function () {
   //_end_date = (new Date(_end_date)).toISOString()
   let _start_date
   if (_start_date_val !== '') {
-    _start_date = (new Date(_start_date_val + '.0000')).toISOString()
+    console.log(_start_date_val)
+    // _start_date = (new Date(_start_date_val + '.0000')).toISOString()
+    _start_date = (new Date(_start_date_val)).toISOString()
   }
   
   
   let _end_date
   if (_end_date_val !== '') {
-    _end_date = (new Date(_end_date_val + '.0000')).toISOString()
+    // _end_date = (new Date(_end_date_val + '.0000')).toISOString()
+    _end_date = (new Date(_end_date_val)).toISOString()
   }
   else {
-    _end_date = dayjs(_start_date_val + '.0000').add(1, 'hour').toISOString()
+    // _end_date = dayjs(_start_date_val + '.0000').add(1, 'hour').toISOString()
+    _end_date = dayjs(_start_date_val).add(1, 'hour').toISOString()
   }
   
   var _location = _panel.find('[name="location"]').val().trim();
